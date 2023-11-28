@@ -83,6 +83,7 @@ export const DocumentList = ({
             active={params.documentId === document._id}
             onExpand={() => onExpand(document._id)}
             expanded={expanded[document._id]}
+            level={level}
           />
 
           {/* Render child documents if the current document is expanded */}

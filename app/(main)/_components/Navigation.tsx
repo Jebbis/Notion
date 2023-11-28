@@ -24,13 +24,17 @@ export const Navigation = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const create = useMutation(api.documents.create);
 
+  // useRef to hold whether the user is resizing the sidebar,
+  // and references to sidebar and navbar elements
   const isResizingRef = useRef(false);
   const sidebarRef = useRef<ElementRef<"aside">>(null);
   const navbarRef = useRef<ElementRef<"div">>(null);
+
+  // useState to manage the sidebar's collapse/expand state and resetting state
   const [isResetting, setIsResetting] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(isMobile);
 
-  //These useEffects track the mobile and desktop views to chnage the sidebar styling correctly
+  // useEffect to handle view changes between mobile and desktop
   useEffect(() => {
     if (isMobile) {
       collapse();
@@ -45,65 +49,81 @@ export const Navigation = () => {
     }
   }, [pathname, isMobile]);
 
+  // Function to handle mouse down event on the resizable area
   const handleMouseDown = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
+    // Prevent default browser behavior
     event.preventDefault();
     event.stopPropagation();
 
+    // Set resizing flag to true and attach mouse move and up event listeners
     isResizingRef.current = true;
     document.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mouseup", handleMouseUp);
   };
 
-  //Change the width of LEFTSIDEBAR / NAVBAR based on mouse x axis movement.
+  // Function to handle mouse move event for resizing sidebar
   const handleMouseMove = (event: MouseEvent) => {
+    // Check if resizing is enabled
     if (!isResizingRef.current) return;
-    //Tracks mouse movement on x axis
+
+    // Calculate new width based on mouse x-axis movement
     let newWidth = event.clientX;
 
-    //Add max and min widths for navbar
+    // Set minimum and maximum widths for the sidebar
     if (newWidth < 240) newWidth = 240;
     if (newWidth > 480) newWidth = 480;
 
+    // Set new widths for sidebar and navbar
     if (sidebarRef.current && navbarRef.current) {
       sidebarRef.current.style.width = `${newWidth}px`;
       navbarRef.current.style.setProperty("left", `${newWidth}px`);
       navbarRef.current.style.setProperty(
         "width",
-        `calc(100% - ${newWidth})px`
+        `calc(100% - ${newWidth}px)`
       );
     }
   };
 
+  // Function to handle mouse up event after resizing
   const handleMouseUp = () => {
     isResizingRef.current = false;
     document.removeEventListener("mousemove", handleMouseMove);
     document.removeEventListener("mouseup", handleMouseUp);
   };
 
+  // Function to reset the width of sidebar and navbar
   const resetWidth = () => {
     if (sidebarRef.current && navbarRef.current) {
       setIsCollapsed(false);
       setIsResetting(true);
+
+      // Reset sidebar and navbar width based on mobile/desktop view
       sidebarRef.current.style.width = isMobile ? "100%" : "240px";
       navbarRef.current.style.setProperty(
         "width",
         isMobile ? "0" : "calc(100% - 240px)"
       );
       navbarRef.current.style.setProperty("left", isMobile ? "100%" : "240px");
+
+      // Reset the resetting state after a delay for transition effect
       setTimeout(() => setIsResetting(false), 300);
     }
   };
 
+  // Function to collapse the sidebar
   const collapse = () => {
     if (sidebarRef.current && navbarRef.current) {
       setIsCollapsed(true);
       setIsResetting(true);
 
+      // Collapse the sidebar and adjust navbar width and position
       sidebarRef.current.style.width = "0";
       navbarRef.current.style.setProperty("width", "100%");
       navbarRef.current.style.setProperty("left", "0");
+
+      // Reset the resetting state after a delay for transition effect
       setTimeout(() => setIsResetting(false), 300);
     }
   };

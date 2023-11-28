@@ -15,5 +15,5 @@ const MarketingPage = () => {
     </div>
   );
 };
-/* 3:38:00 */
+/* 3:48:00 Käy läpi selitys ja kommentointi*/
 export default MarketingPage;
