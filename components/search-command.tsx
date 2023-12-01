@@ -33,6 +33,9 @@ export const SearchCommand = () => {
     setIsMounted(true);
   }, []);
 
+  //Add eventlistener when toggle state changes
+  //Listen when combination of k and ctrl keys are pressed
+  //on trigger call the toggle() function
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
@@ -44,6 +47,8 @@ export const SearchCommand = () => {
     return () => document.removeEventListener("keydown", down);
   }, [toggle]);
 
+  //When document is selected push new route
+  //call the onClose function to close the searchbar
   const onSelect = (id: string) => {
     router.push(`/documents/${id}`);
     onClose();
