@@ -15,5 +15,5 @@ const MarketingPage = () => {
     </div>
   );
 };
-/* 4:02:00 Käy läpi selitys ja kommentointi*/
+/* 4:44:00  KOMMENTOI JA TARKISTA ENNEN JATKAMISTA . search.commands.tsx*/
 export default MarketingPage;
