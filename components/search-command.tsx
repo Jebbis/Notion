@@ -27,8 +27,9 @@ export const SearchCommand = () => {
   const isOpen = useSearch((store) => store.isOpen);
   const onClose = useSearch((store) => store.onClose);
 
-  //Use client still does some server side rendering and can cause hydration errors
+  //Use client still does some server side rendering and can cause hydration errors when using Dialogs
   //useEffect and if !isMounted prevents that error
+  //
   useEffect(() => {
     setIsMounted(true);
   }, []);

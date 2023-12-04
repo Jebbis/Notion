@@ -15,5 +15,5 @@ const MarketingPage = () => {
     </div>
   );
 };
-/* 4:44:00  KOMMENTOI JA TARKISTA ENNEN JATKAMISTA . search.commands.tsx*/
+/* 5:09:15 */
 export default MarketingPage;
