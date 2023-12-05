@@ -28,17 +28,20 @@
 - Next.JS - version 13.5.4
 - Typescript - version 5.0
 - Tailwind CSS - version 3.0
+- Edge Store - version 0.1.4
+- Clerk - version 4.26.3
+- Convex - version 1.6.2
 
 
 ## Features
 List the ready features here:
-- Real-time database - Convex
+- Real-time database
 - Notion-style editor
 - Light and Dark mode 
 - Infinite children documents
 - Trash can & soft delete
-- Authentication - Clerk
-- File upload - Edge Store
+- Authentication
+- File upload
 - File deletion
 - File replacement 
 - Icons for each document (changes in real-time)
