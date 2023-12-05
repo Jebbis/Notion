@@ -25,27 +25,57 @@
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- Next.JS - version 13.5.4
+- Typescript - version 5.0
+- Tailwind CSS - version 3.0
 
 
 ## Features
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- Real-time database
+- Notion-style editor
+- Light and Dark mode
+- Infinite children documents
+- Trash can & soft delete
+- Authentication
+- File upload
+- File deletion
+- File replacement
+- Icons for each document (changes in real-time)
+- Expandable sidebar
+- Full mobile responsiveness
+- Publish your note to the web
+- Fully collapsable sidebar
+- Landing page
+- Cover image of each document
+- Recover deleted files
 
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+<!-- add img folder to root where readme file is located  -->
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+To run this project you need Convex, Clerk and Edge Store accounts and setup environments to get secret keys
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+Cloning the repository `git clone https://github.com/Jebbis/Notion.git`
+
+Install dependecies `npm i`
+
+Setup .env.local file 
+```
+CONVEX_DEPLOYMENT=
+NEXT_PUBLIC_CONVEX_URL=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+EDGE_STORE_ACCESS_KEY=
+EDGE_STORE_SECRET_KEY=
+```
+
+Start Convex `npx convex dev`
+
+Start the app `npm run dev`
 
 
 ## Usage
@@ -56,7 +86,7 @@ Provide various use cases and code examples here.
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _in progress_ / _complete_
 
 
 ## Room for Improvement
@@ -72,11 +102,8 @@ To do:
 
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
-
+- This project was based on [this tutorial](https://www.youtube.com/watch?v=0OaDyjB9Ib8).
+  
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
