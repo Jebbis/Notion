@@ -47,7 +47,7 @@ List the ready features here:
 - Icons for each document (changes in real-time)
 - Expandable sidebar
 - Full mobile responsiveness
-- Publish your note to the web
+- Publish your note for sharing
 - Fully collapsable sidebar
 - Landing page
 - Cover image of each document
