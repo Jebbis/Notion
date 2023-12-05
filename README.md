@@ -32,15 +32,15 @@
 
 ## Features
 List the ready features here:
-- Real-time database
+- Real-time database - Convex
 - Notion-style editor
-- Light and Dark mode
+- Light and Dark mode 
 - Infinite children documents
 - Trash can & soft delete
-- Authentication
-- File upload
+- Authentication - Clerk
+- File upload - Edge Store
 - File deletion
-- File replacement
+- File replacement 
 - Icons for each document (changes in real-time)
 - Expandable sidebar
 - Full mobile responsiveness
