@@ -61,14 +61,14 @@ export const SearchCommand = () => {
     <CommandDialog open={isOpen} onOpenChange={onClose}>
       <CommandInput placeholder={`Search ${user?.fullName}'s Jotion...`} />
       <CommandList>
-        <CommandEmpty> No results found.</CommandEmpty>
+        <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Documents">
           {documents?.map((document) => (
             <CommandItem
               key={document._id}
-              value={`${document._id}-${document.title}`}
+              value={document.title}
               title={document.title}
-              onSelect={onSelect}
+              onSelect={() => onSelect(document._id)}
             >
               {document.icon ? (
                 <p className="mr-2 text-[18px]">{document.icon}</p>
