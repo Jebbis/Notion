@@ -1,9 +1,10 @@
 "use client";
 
+import { useRef, useState } from "react";
+import { useMutation } from "convex/react";
+
 import { Doc } from "@/convex/_generated/dataModel";
 import { api } from "@/convex/_generated/api";
-import { useMutation } from "convex/react";
-import { useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -62,8 +63,8 @@ export const Title = ({ initialData }: TitleProps) => {
       ) : (
         <Button
           onClick={enableInput}
-          variant={"ghost"}
-          size={"sm"}
+          variant="ghost"
+          size="sm"
           className="font-normal h-auto p-1"
         >
           <span className="truncate">{initialData?.title}</span>
