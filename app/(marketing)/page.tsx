@@ -15,5 +15,5 @@ const MarketingPage = () => {
     </div>
   );
 };
-/* 6:11:20 */
+/* 7:21:40 Kirjoita documentaatio editor kohdasta*/
 export default MarketingPage;
