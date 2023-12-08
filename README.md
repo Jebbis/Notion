@@ -55,6 +55,8 @@ List the ready features here:
 ## Screenshots
 ![Example screenshot](./img/HomeScreen.png)
 ![Example screenshot](./img/DocumentsPage.png)
+![Example screenshot](./img/Search.png)
+![Example screenshot](./img/Share.png)
 <!-- add img folder to root where readme file is located  -->
 
 
