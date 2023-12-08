@@ -1,6 +1,6 @@
 # Project Name
 > This is a Notion like note taking app
-> Live demo [_here_]([https://noteapp-jebbis.vercel.app/]). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [_here_](https://noteapp-jebbis.vercel.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 * [General Info](#general-information)
