@@ -1,5 +1,6 @@
 # Project Name
-> This is a Notion like note taking app
+> This is a Notion like note taking app.
+
 > Live demo [_here_](https://noteapp-jebbis.vercel.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
@@ -17,10 +18,7 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
+- The aim of this project was to learn new skills and how to structure a bigger project
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
@@ -55,7 +53,8 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/HomeScreen.png)
+![Example screenshot](./img/DocumentsPage.png)
 <!-- add img folder to root where readme file is located  -->
 
 
