@@ -1,6 +1,7 @@
 # Project Name
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> This is a Notion like note taking app.
+
+> Live demo [_here_](https://noteapp-jebbis.vercel.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -17,10 +18,7 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
+- The aim of this project was to learn new skills and how to structure a bigger project
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
@@ -55,7 +53,8 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/HomeScreen.png)
+![Example screenshot](./img/DocumentsPage.png)
 <!-- add img folder to root where readme file is located  -->
 
 
@@ -89,19 +88,13 @@ Provide various use cases and code examples here.
 
 
 ## Project Status
-Project is: _in progress_ / _complete_
+Project is:  _complete_
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
+Further development:
+- Create more custom editor stylings
 
 
 ## Acknowledgements
@@ -109,7 +102,7 @@ To do:
   
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Discord - lasse0
 
 
 <!-- Optional -->
