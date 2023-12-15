@@ -1,4 +1,4 @@
-# Project Name
+# Notion
 > This is a Notion like note taking app.
 
 > Live demo [_here_](https://noteapp-jebbis.vercel.app/). <!-- If you have the project hosted somewhere, include the link here. -->
@@ -9,7 +9,6 @@
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
@@ -79,13 +78,6 @@ EDGE_STORE_SECRET_KEY=
 Start Convex `npx convex dev`
 
 Start the app `npm run dev`
-
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
 
 
 ## Project Status
