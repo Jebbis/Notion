@@ -32,7 +32,6 @@
 
 
 ## Features
-List the ready features here:
 - Real-time database
 - Notion-style editor
 - Light and Dark mode 
